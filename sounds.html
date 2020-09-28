@@ -1,0 +1,49 @@
+<html>
+<link rel="stylesheet" type="text/css" href="sonidos.css">
+
+</style>
+
+<body background="l9.jpg">
+
+<p class="t"> Sonidos del bosque</p>
+<p class="te">Control de Volumen</p>
+
+<audio  id="s1"  src="paj.mp3" autoplay preload></audio>
+
+<audio  id="s2"  src="cascada.mp3" autoplay preload></audio>
+
+<audio  id="s3"  src="viento.mp3" autoplay preload></audio>
+
+<audio  id="s4"  src="ardilla.mp3" autoplay preload></audio>
+
+<audio  id="s5"  src="leon.mp3" autoplay preload></audio>
+
+<div>
+    <button onclick="document.getElementById('s1').play()" class="a"><span>Pajaros</button>
+    <button onclick="document.getElementById('s1').pause()" class="pla">Pausa</button>
+</div>
+<div>
+    <button onclick="document.getElementById('s2').play()" class="b">Cascada</button>
+    <button onclick="document.getElementById('s2').pause()" class="plb">Pausa</button>
+</div>
+<div>
+    <button onclick="document.getElementById('s3').play()" class="c">Viento</button>
+    <button onclick="document.getElementById('s3').pause()" class="plc">Pausa</button>
+</div>
+<div>
+    <button onclick="document.getElementById('s4').play()" class="d">Ardillas</button>
+    <button onclick="document.getElementById('s4').pause()" class="pld">Pausa</button>
+</div>
+<div>
+    <button onclick="document.getElementById('s5').play()" class="e">Leon</button>
+    <button onclick="document.getElementById('s5').pause()" class="ple">Pausa</button>
+</div>
+
+
+<div>
+    <button onclick="document.getElementById('s5').volume += .1;document.getElementById('s4').volume += .1;document.getElementById('s3').volume += .1;document.getElementById('s2').volume += .1;document.getElementById('s1').volume += .1" class="su">Subir</button>
+    <button onclick="document.getElementById('s5').volume -= .1;document.getElementById('s4').volume -= .1;document.getElementById('s3').volume -= .1;document.getElementById('s2').volume -= .1;document.getElementById('s1').volume -= .1" class="ba">Bajar</button>
+</div>
+
+</body>
+</html>
